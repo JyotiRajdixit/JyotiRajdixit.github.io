@@ -5,14 +5,14 @@
 }
 
 html {
-  height: 110%;
+  height: 120%;
   margin: 0;
   position: relative;
 }
 
 body {
   background-image: url("bg.jpeg");
-  height: 110%;
+  height: 120%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
