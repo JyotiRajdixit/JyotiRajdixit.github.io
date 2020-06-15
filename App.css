@@ -20,7 +20,7 @@ body {
 }
 
 .myname {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-left: 10px;
   color: white;
 }
@@ -31,48 +31,67 @@ li {
   margin-right: 30px;
   border-bottom: 0;
   transition: border-bottom 0.7s;
+  margin-bottom: 0px;
 }
 
 li:hover {
   border-bottom: 2px solid white;
 }
 
-.social-buttons a {
-  display: inline-flex;
-  text-decoration: none;
-  font-size: 22px;
-  width: 60px;
-  height: 60px;
-  color: #fff;
-  justify-content: center;
-  align-items: center;
+.content {
+  margin: 0;
+  padding: 20px;
+  background: #130d0a;
+  width: 100%;
+  height: 130vh;
+}
+
+#hero {
+  height: 800px;
+  overflow: hidden;
   position: relative;
-  margin: 0 8px;
 }
 
-.social-buttons a::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(45deg, #22a6b3, #30336b);
-  border-radius: 50%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.layer {
+  background-position: bottom center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 800px;
+  position: fixed;
   z-index: -1;
-  transition: 0.3s ease-in;
 }
 
-.social-buttons a:hover::before {
-  transform: scale(0);
+.layer-bg {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_bg.jpg');
 }
 
-.social-buttons a i {
-  transition: 0.3s ease-in;
+.layer-1 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_03.png');
+  background-position: left bottom;
 }
 
-.social-buttons a:hover i {
-  background: linear-gradient(45deg, #22a6b3, #30336b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transform: scale(2.2);
+.layer-2 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_02.png');
+}
+
+.layer-3 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_man.png');
+  background-position: left bottom;
+}
+
+.layer-4 {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_01.png');
+}
+
+.layer-overlay {
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/272781/ilu_overlay.png');
+}
+
+.media {
+  position: absolute;
+  margin-left: 48%;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  transform: translate(-53%, -50%);
 }
