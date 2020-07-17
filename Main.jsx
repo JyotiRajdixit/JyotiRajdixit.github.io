@@ -13,7 +13,7 @@ class Main extends React.Component {
       <div>
       <h1 style={mystyle}>
       LET'S BUILD SOMETHING <br />AMAZING TOGETHER
-       <input type="date" value="" />
+
       </h1>
     </div>
     )
